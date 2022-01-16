@@ -34,6 +34,8 @@ class _QuizPageState extends State<QuizPage> {
     'A slug\'s blood is green.'
   ];
 
+  List<bool> answers = [false, true, true];
+
   int questionNumber = 0;
 
   @override

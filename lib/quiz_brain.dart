@@ -33,4 +33,9 @@ class QuizBrain {
   String getQuestionText(int questionNumber) {
     return _questionBank[questionNumber].questionText;
   }
+
+  // 質問の答え
+  bool getCorrectAnswer(int questionNumber) {
+    return _questionBank[questionNumber].questionAnswer;
+  }
 }

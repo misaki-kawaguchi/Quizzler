@@ -51,4 +51,18 @@ class QuizBrain {
   bool getCorrectAnswer() {
     return _questionBank[_questionNumber].questionAnswer;
   }
+
+  // 質問が終わったかどうかを判断
+  bool isFinished() {
+    if (_questionNumber >= _questionBank.length - 1) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  // 問題を一番最初に戻す
+  void reset() {
+    _questionNumber = 0;
+  }
 }

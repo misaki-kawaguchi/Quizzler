@@ -35,7 +35,7 @@ class QuizBrain {
   // 次の質問
   void nextQuestion() {
     // _questionBankの数より小さい場合
-    if (_questionNumber < _questionBank.length) {
+    if (_questionNumber < _questionBank.length - 1) {
       _questionNumber++;
     }
     print(_questionNumber);

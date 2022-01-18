@@ -32,6 +32,14 @@ class QuizBrain {
         true),
   ];
 
+  // 次の質問
+  void nextQuestion() {
+    // _questionBankの数より小さい場合
+    if (_questionNumber < _questionBank.length) {
+      _questionNumber++;
+    }
+  }
+
   // 質問のテキスト
   String getQuestionText() {
     return _questionBank[_questionNumber].questionText;

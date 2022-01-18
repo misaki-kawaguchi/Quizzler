@@ -60,4 +60,9 @@ class QuizBrain {
       return false;
     }
   }
+
+  // 問題を一番最初に戻す
+  void reset() {
+    _questionNumber = 0;
+  }
 }

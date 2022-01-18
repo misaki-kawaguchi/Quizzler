@@ -38,6 +38,8 @@ class QuizBrain {
     if (_questionNumber < _questionBank.length) {
       _questionNumber++;
     }
+    print(_questionNumber);
+    print(_questionBank.length);
   }
 
   // 質問のテキスト

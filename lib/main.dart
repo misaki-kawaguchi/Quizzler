@@ -77,7 +77,7 @@ class _QuizPageState extends State<QuizPage> {
                 }
 
                 setState(() {
-                  quizBrain.getQuestionText();
+                  quizBrain.nextQuestion();
                 });
               },
             ),
@@ -105,7 +105,7 @@ class _QuizPageState extends State<QuizPage> {
                   print('user got it wrong!');
                 }
                 setState(() {
-                  quizBrain.getQuestionText();
+                  quizBrain.nextQuestion();
                 });
               },
             ),
